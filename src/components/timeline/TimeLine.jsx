@@ -23,10 +23,10 @@ export default function TimeLine({ username,  }) {
         //プロフィールの場合のAPI
         const res = username
           ? await axios.get(
-              `api/posts/profile/${username}`
+              `https://my-sns-backend.onrender.com/api/posts/profile/${username}`
             )
           : await axios.get(
-              `api/posts/timeline/${user._id}`
+              `https://my-sns-backend.onrender.com/api/posts/timeline/${user._id}`
             );
         //Homeの場合「タイムライン」
         // console.log("APIレスポンス:", res.data); // デバッグ用

@@ -17,7 +17,7 @@ export default function Profile() {
     const fetchUser = async () => {
       //クエリで参照するので、?username=${username}usernameはuseParamsより参照 PUBLIC_FOLDER +
       const response = await axios.get(
-        `api/users?username=${username}`
+        `https://my-sns-backend.onrender.com/api/users?username=${username}`
       );
       setUser(response.data);
       // console.log(response.data);

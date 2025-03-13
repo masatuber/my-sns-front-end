@@ -30,7 +30,10 @@ export default function Share() {
 
       try {
         //画像アップロード用のAPI呼ぶ
-        await axios.post("api/upload", data);
+        await axios.post(
+          "https://my-sns-backend.onrender.com/api/upload",
+          data
+        );
       } catch (err) {
 
         console.log(err);
@@ -41,7 +44,10 @@ export default function Share() {
 
     try {
       
-      await axios.post("api/posts", newPost);
+      await axios.post(
+        "https://my-sns-backend.onrender.com/api/posts",
+        newPost
+      );
       window.location.reload();
     } catch(err) {
       console.log(err);

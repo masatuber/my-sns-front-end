@@ -21,9 +21,12 @@ export default function Setting() {
     //削除確認用のダイアログ
     try {
       //削除のAPIを呼出す
-      await axios.delete(`api/users/${user._id}`, {
-        data: {userid: user._id}
-      });
+      await axios.delete(
+        `https://my-sns-backend.onrender.com/api/users/${user._id}`,
+        {
+          data: { userid: user._id },
+        }
+      );
       window.alert("アカウントを削除しました");
       localStorage.clear();
       //  window.location.reload();

@@ -19,7 +19,9 @@ export default function Post({ post }) {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const response = await axios.get(`api/users?userid=${post.userid}`);
+      const response = await axios.get(
+        `https://my-sns-backend.onrender.com/api/users?userid=${post.userid}`
+      );
       setUser(response.data);
       // console.log(response.data);
     };
@@ -30,9 +32,12 @@ export default function Post({ post }) {
   const handleLike = async () => {
     try {
       //イイねのAPIを呼出す  /:id/like
-      await axios.put(`api/posts/${post._id}/like`, {
-        userid: loginUser._id,
-      });
+      await axios.put(
+        `https://my-sns-backend.onrender.com/api/posts/${post._id}/like`,
+        {
+          userid: loginUser._id,
+        }
+      );
     } catch (err) {
       console.log(err);
     }
@@ -48,9 +53,12 @@ export default function Post({ post }) {
 
     try {
       //削除のAPIを呼出す
-      await axios.delete(`api/posts/${post._id}`, {
-        data: { userid: loginUser._id },
-      });
+      await axios.delete(
+        `https://my-sns-backend.onrender.com/api/posts/${post._id}`,
+        {
+          data: { userid: loginUser._id },
+        }
+      );
       window.alert("投稿を削除しました");
       window.location.reload();
     } catch (err) {

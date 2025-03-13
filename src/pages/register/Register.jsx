@@ -27,7 +27,10 @@ export default function Register() {
           password: password.current.value,
         };
         //auth/registerのAPIを呼出す /api/auth/register
-        await axios.post("api/auth/register", user);
+        await axios.post(
+          "https://my-sns-backend.onrender.com/api/auth/register",
+          user
+        );
         navigate("/login");
       } catch (err) {
         alert(err);
