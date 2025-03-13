@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-const allowedOrigins = ['http://localhost:5000', 'http://localhost:3000'];
+const allowedOrigins = ['http://localhost:5000', 'http://localhost:3000','https://my-sns-backend.onrender.com/'];
 
 export default defineConfig({
   plugins: [react()],
@@ -24,7 +24,7 @@ export default defineConfig({
     },
     proxy: {
       '/api': {
-        target: 'http://localhost:3000/',
+        target: 'https://my-sns-backend.onrender.com/',
         changeOrigin: true,
         secure: false,
       },

@@ -22,8 +22,12 @@ export default function TimeLine({ username,  }) {
       try {
         //プロフィールの場合のAPI
         const res = username
-          ? await axios.get(`api/posts/profile/${username}`)
-          : await axios.get(`api/posts/timeline/${user._id}`);
+          ? await axios.get(
+              `api/posts/profile/${username}`
+            )
+          : await axios.get(
+              `api/posts/timeline/${user._id}`
+            );
         //Homeの場合「タイムライン」
         // console.log("APIレスポンス:", res.data); // デバッグ用
 

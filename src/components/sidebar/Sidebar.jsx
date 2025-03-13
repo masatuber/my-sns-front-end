@@ -36,19 +36,19 @@ export default function Sidebar() {
             </li>
             <li className="sidebarListItem">
               <Search className="sidebarIcon" />
-              <span className="sidebarListItemText">検索</span>
+              <span className="sidebarListItemText">検索(実装前)</span>
             </li>
             <li className="sidebarListItem">
               <Notifications className="sidebarIcon" />
-              <span className="sidebarListItemText">通知</span>
+              <span className="sidebarListItemText">通知(実装前)</span>
             </li>
             <li className="sidebarListItem">
               <MessageRounded className="sidebarIcon" />
-              <span className="sidebarListItemText">メッセージ</span>
+              <span className="sidebarListItemText">メッセージ(実装前)</span>
             </li>
             <li className="sidebarListItem">
               <Bookmark className="sidebarIcon" />
-              <span className="sidebarListItemText">ブックマーク</span>
+              <span className="sidebarListItemText">ブックマーク(実装前)</span>
             </li>
             <li className="sidebarListItem">
               <Person className="sidebarIcon" />

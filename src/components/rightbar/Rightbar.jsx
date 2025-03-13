@@ -20,14 +20,14 @@ export default function Rightbar({ user }) {
       try {
         const response = await axios.get(`https://newsapi.org/v2/everything`, {
           params: {
-            q: "テクノロジー", // 検索キーワード
-            // 言語を日本語に指定language: "en",
-            // country: "ja",
-            //pageSize: 5,
+            q: "朝日新聞", // 検索キーワード
+            // 言語を日本語に指定language: "en",検索ワード日本語で取得可能
+            pageSize: 20,
+            //page: "5",qでは取得不可
             apiKey: API_KEY,
           },
         });
-        console.log(response.data);
+        //console.log(response.data);
 
         if (response.status === 200) {
           const articles = response.data.articles ?? [];
@@ -44,7 +44,7 @@ export default function Rightbar({ user }) {
     return (
       <>
         <div className="eventContainer">
-          <button onClick={hendleGet}> ニュースデータ取得</button>
+          <button onClick={hendleGet}> 最新ニュースを見る</button>
         </div>
 
         <h4 className="rightbarTitle">オンラインの友達</h4>
@@ -57,8 +57,8 @@ export default function Rightbar({ user }) {
         {/* ニュースデータが存在する場合にレンダリング */}
         {newsData.length > 0 && (
           <div className="newsSection">
-            <h4 className="rightbarTitle">最新テクノロジーニュース</h4>
-            <ul className="newsList">
+            <h4 className="rightbarTitle">最新ニュース</h4>
+            <ol className="newsList">
               {newsData.map((article, index) => (
                 <li key={index} className="newsItem">
                   <a
@@ -70,7 +70,7 @@ export default function Rightbar({ user }) {
                   </a>
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
         )}
       </>
@@ -84,7 +84,7 @@ export default function Rightbar({ user }) {
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">出身:</span>
-            <span className="rightbarInfoKey">福岡:</span>
+            <span className="rightbarInfoKey">○:</span>
           </div>
           <h4 className="rightbarTitle">あなたの友達</h4>
           <div className="rightbarFollowings">
@@ -94,7 +94,7 @@ export default function Rightbar({ user }) {
                 alt=""
                 className="rightbarFollowingImg"
               />
-              <span className="rightbarFollowingName">Shin Code</span>
+              <span className="rightbarFollowingName">○</span>
             </div>
             <div className="rightbarFollowing">
               <img
@@ -102,7 +102,7 @@ export default function Rightbar({ user }) {
                 alt=""
                 className="rightbarFollowingImg"
               />
-              <span className="rightbarFollowingName">田中</span>
+              <span className="rightbarFollowingName">○</span>
             </div>
             <div className="rightbarFollowing">
               <img
@@ -110,7 +110,7 @@ export default function Rightbar({ user }) {
                 alt=""
                 className="rightbarFollowingImg"
               />
-              <span className="rightbarFollowingName">佐藤</span>
+              <span className="rightbarFollowingName">○</span>
             </div>
             <div className="rightbarFollowing">
               <img
@@ -118,7 +118,7 @@ export default function Rightbar({ user }) {
                 alt=""
                 className="rightbarFollowingImg"
               />
-              <span className="rightbarFollowingName">佐々木</span>
+              <span className="rightbarFollowingName">○</span>
             </div>
           </div>
         </div>
