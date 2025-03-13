@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-const allowedOrigins = ['http://localhost:5000', 'http://localhost:3000','https://my-sns-backend.onrender.com/'];
+const allowedOrigins = ['http://localhost:5000', 'http://localhost:3000','https://my-sns-backend.onrender.com/', 'https://news-nagara-sns.onrender.com/'];
 
 export default defineConfig({
   plugins: [react()],
