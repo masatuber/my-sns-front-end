@@ -30,7 +30,7 @@
 }
 
 .sidebarIcon {
-    font-size: 35px !important;
+    font-size: 35px;
     margin-right: 10px;
 }
 
@@ -61,4 +61,17 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .sidebarWrapper{
+        padding: 3.5px;
+    }
+        .sidebarIcon {
+            min-width: 5px;
+            min-height: 5px;
+        }
+            .sidebarListItemText {
+                font-size: 8px;
+            }
 }

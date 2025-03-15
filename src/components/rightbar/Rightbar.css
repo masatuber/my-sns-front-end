@@ -129,3 +129,20 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 480px) {
+    .rightbarTitle {
+        font-size: 16px;
+    }
+        .rightbarUsername {
+            font-size: 10px;
+            font-weight: 550;
+        }
+            .rightbarFriendList {
+                padding: 0px 0px 0px 20px;
+            }
+                .rightbarProfileImg {
+                    width: 30px;
+                    height: 30px;
+                }
+}

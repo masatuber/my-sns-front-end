@@ -44,7 +44,7 @@ export default function Rightbar({ user }) {
     return (
       <>
         <div className="eventContainer">
-          <button onClick={hendleGet}> 最新ニュースを見る</button>
+          <button onClick={hendleGet}> 最新ニュースを見る実装出来ない</button>
         </div>
 
         <h4 className="rightbarTitle">オンラインの友達</h4>

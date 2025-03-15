@@ -30,7 +30,7 @@ export default function Login() {
       <div className="login">
         <div className="loginWrapper">
           <div className="loginLeft">
-            <h3 className="loginLogo">ニュースながらSNS</h3>
+            <div className="loginLogo">音楽ながらSNS</div>
             <span className="loginDesc">新感覚を味わうSNS</span>
           </div>
           <div className="loginRight">

@@ -95,3 +95,15 @@
   font-size: 20px;
   margin-bottom: 7px;
 }
+
+.loginPageButton {
+  font-size: 15px;
+  background-color: #96cdeb;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .loginPageButton {
+    font-size: 10px !important;
+  }
+}

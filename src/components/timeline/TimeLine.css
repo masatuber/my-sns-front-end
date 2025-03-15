@@ -5,3 +5,10 @@
 .timelineWrapper {
     padding: 20px;
 }
+
+@media only screen and (max-width: 480px) {
+    .timelineWrapper {
+        padding: 10px;
+    }
+
+}

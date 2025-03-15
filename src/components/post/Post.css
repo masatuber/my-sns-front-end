@@ -76,3 +76,22 @@
   font-size: 15px;
   margin-right: 3px;
 }
+
+@media only screen and (max-width: 480px) {
+  .postUsername {
+    font-size: 13px;
+    font-weight: 550;
+  }
+    .postCenter {
+      margin: 10px 0;
+    }
+        .postCommentText {
+          font-size: 10px;
+        }
+            .postText {
+              font-size: 14px;
+            }
+                .postLikeCounter {
+                  font-size: 13px;
+                }
+}

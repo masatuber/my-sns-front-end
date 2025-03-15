@@ -89,3 +89,20 @@
     cursor: pointer;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        font-size:  10px;
+    }
+        .topbarContainer {
+            min-width: 95vh;
+            min-height: 20%;
+        }
+                .searchIcon {
+                    font-size: 10px !important;
+                }
+                                .searchInput {
+                                    border: none;
+                                    min-width: 15vh;
+                                }
+}

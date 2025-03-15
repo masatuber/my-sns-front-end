@@ -12,7 +12,7 @@ export default function Topbar() {
       <div className="topbarContainer">
         <div className="topbarLeft">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <span className="logo">ニュースながらSNS</span>
+            <span className="logo">音楽ながらSNS</span>
           </Link>
         </div>
         <div className="topbarCenter">

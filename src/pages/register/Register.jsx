@@ -45,11 +45,11 @@ export default function Register() {
       <div className="login">
         <div className="loginWrapper">
           <div className="loginLeft">
-            <h3 className="loginLogo">ニュースながらSNS</h3>
+            <h3 className="loginLogo">音楽ながらSNS</h3>
             <span className="loginDesc">新感覚を味わうことができるSNS</span>
             <Link to="/login">
-              <button>
-                既にアカウントお持ちの場合はこちら
+              <button className="loginPageButton">
+                既にアカウントをお持ちの方はこちら
               </button>
             </Link>
           </div>

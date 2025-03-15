@@ -94,3 +94,43 @@
   font-size: 20px;
   margin-bottom: 7px;
 }
+
+@media only screen and (max-width: 480px) {
+  .loginWrapper {
+    width: 90vh !important;
+    height: 90vh !important;
+  }
+  .loginLogo {
+    font-size: 20px !important;
+  }
+    .loginDesc {
+      font-size: 16px !important;
+    }
+        .loginBox {
+          width: 50px !important;
+          height: 90vh !important;
+        }
+            .loginInput {
+              font-size: 8px !important;
+              padding-left: 2px !important;
+              margin: 0 0 0 0 !important;
+            }
+              .loginMsg {
+                font-size: 12px !important;
+              }
+                .loginRegisterButton {
+                  font-size: 8px !important;
+                  height: 40px !important;
+                  width: 70px !important;
+                  margin: 0px 0 !important;
+                }
+                  .loginForgot {
+                    font-size: 7px !important;
+                  }
+                    .loginButton {
+                      font-size: 8px !important;
+                      width: 70px !important;
+                      height: 40px !important;
+                      margin: 0px 0 !important;
+                    }
+}
