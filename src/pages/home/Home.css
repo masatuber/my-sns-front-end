@@ -3,3 +3,11 @@
     width: 100%;
     background-color: #d8d8d8;
 }
+
+@media only screen and (max-width: 414px) {
+    .homeContainer {
+
+        padding: 10px !important;
+    }
+    
+}

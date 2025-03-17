@@ -43,3 +43,21 @@
 .profileRightBottom {
   display: flex;
 }
+
+@media only screen and (max-width: 414px) {
+  .profileCover {
+    height: 180px !important;
+  }
+    .profileCoverImg {
+      height: 130px !important;
+    }
+      .profileUserImg {
+        width: 80px !important;
+        height: 80px !important;
+        top: 80px !important;
+      }
+        .profileInfoName {
+          font-size: 18px !important;
+        }
+
+}

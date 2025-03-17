@@ -95,34 +95,39 @@
   margin-bottom: 7px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 414px) {
   .loginWrapper {
     width: 90vh !important;
     height: 90vh !important;
   }
   .loginLogo {
-    font-size: 20px !important;
+    font-size: 15px !important;
+    margin-top: -300px !important;
+    margin-left: 15px !important;
+    margin-bottom: 2px !important;
   }
     .loginDesc {
-      font-size: 16px !important;
+      font-size: 12px !important;
+      margin-left: 15px !important;
     }
         .loginBox {
-          width: 50px !important;
-          height: 90vh !important;
+          width: 20vh !important;
+          height: 65vh !important;
+          margin-right: 70px !important;
         }
             .loginInput {
               font-size: 8px !important;
               padding-left: 2px !important;
-              margin: 0 0 0 0 !important;
+              margin: 0 !important;
             }
               .loginMsg {
-                font-size: 12px !important;
+                font-size: 10px !important;
               }
                 .loginRegisterButton {
                   font-size: 8px !important;
                   height: 40px !important;
                   width: 70px !important;
-                  margin: 0px 0 !important;
+                  margin: 0px !important;
                 }
                   .loginForgot {
                     font-size: 7px !important;
@@ -131,6 +136,6 @@
                       font-size: 8px !important;
                       width: 70px !important;
                       height: 40px !important;
-                      margin: 0px 0 !important;
+                      margin: 0px !important;
                     }
 }

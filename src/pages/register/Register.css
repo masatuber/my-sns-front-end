@@ -77,7 +77,7 @@
 
 .loginRegisterButton {
   height: 50px;
-  width: 60%;
+  width: 100%;
   align-self: center;
   border-radius: 10px;
   border: none;
@@ -100,10 +100,21 @@
   font-size: 15px;
   background-color: #96cdeb;
   cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
 }
 
-@media only screen and (max-width: 480px) {
-  .loginPageButton {
-    font-size: 10px !important;
-  }
+@media only screen and (max-width: 414px) {
+
+
+    .loginPageButton {
+      font-size: 10px !important;
+    }
+      .loginRegisterButton {
+        margin-right: 38px !important;
+      }
+        
+        .loginRight {
+          flex-direction: row !important;
+        }
 }

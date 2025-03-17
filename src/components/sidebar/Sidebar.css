@@ -63,15 +63,24 @@
     margin-bottom: 15px;
 }
 
-@media only screen and (max-width: 480px) {
+.cashDelete {
+    font-size: 13px;
+    color: brown;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 414px) {
     .sidebarWrapper{
-        padding: 3.5px;
+        padding: 3.5px !important;
     }
         .sidebarIcon {
-            min-width: 5px;
-            min-height: 5px;
+            width: 10px !important;
+            height: 20px !important;
         }
             .sidebarListItemText {
-                font-size: 8px;
+                font-size: 7px !important;
             }
+                .cashDelete {
+                    font-size: 8px !important;
+                }
 }

@@ -72,25 +72,25 @@
     margin-right: 20px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 414px) {
     .shareWrapper {
-        padding: 5px;
+        padding: 5px !important;
     }
         .shareOptions {
-            margin-left: 10px;
-            margin-top: 5px;
-            margin-right: 5px;
+            margin: 0 1px !important;
+            
         }
             .shareOptionText {
-                font-size: 9px;
+                font-size: 7.5px !important;
             }
                 .shareButton {
-                    font-size: 10px;
+                    font-size: 8px !important;
                 }
                         .shareHr {
-                            margin: 10px;
+                            margin: 8px !important;
                         }
                         .share {
-                            height: 25vh;
+                            height: 20vh !important;
+                            width: 46vh !important;
                         }
 }

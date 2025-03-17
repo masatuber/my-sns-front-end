@@ -130,19 +130,37 @@
     object-fit: cover;
 }
 
-@media only screen and (max-width: 480px) {
+.apiButton {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 414px) {
     .rightbarTitle {
-        font-size: 16px;
+        font-size: 12px;
     }
         .rightbarUsername {
-            font-size: 10px;
-            font-weight: 550;
+            font-size: 7px !important;
+            font-weight: 550 !important;
         }
+            .rightbarInfoKey {
+                font-size: 12px !important;
+            }
             .rightbarFriendList {
                 padding: 0px 0px 0px 20px;
             }
                 .rightbarProfileImg {
-                    width: 30px;
-                    height: 30px;
+                    width: 20px !important;
+                    height: 20px !important;
                 }
+                    .rightbarFollowingImg {
+                        width: 50PX !important;
+                        height: 50PX !important;
+                    }
+                        .rightbarOnline {
+                            width: 10px !important;
+                            height: 10px !important;
+                        }
+                            .apiButton {
+                                font-size: 8px !important;
+                            }
 }

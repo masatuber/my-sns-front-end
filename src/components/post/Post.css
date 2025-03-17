@@ -77,21 +77,31 @@
   margin-right: 3px;
 }
 
-@media only screen and (max-width: 480px) {
+.postDeleteButton {
+  background-color: #c48585;
+  cursor: pointer;
+  font-size: 13px;
+  border-color: #ffb2b2;
+}
+
+@media only screen and (max-width: 414px) {
   .postUsername {
-    font-size: 13px;
-    font-weight: 550;
+    font-size: 13px !important;
+    font-weight: 550 !important;
   }
     .postCenter {
-      margin: 10px 0;
+      margin: 10px 0 !important;
     }
         .postCommentText {
-          font-size: 10px;
+          font-size: 10px !important;
         }
             .postText {
-              font-size: 14px;
+              font-size: 14px !important;
             }
                 .postLikeCounter {
-                  font-size: 13px;
+                  font-size: 13px !important;
                 }
+                  .postDeleteButton {
+                    font-size: 9px !important;
+                  }
 }

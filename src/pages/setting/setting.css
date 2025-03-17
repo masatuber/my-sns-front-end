@@ -15,4 +15,14 @@
   width: 85%;
   height: 50px;
   cursor: pointer;
+  color: red;
+}
+
+@media only screen and (max-width: 414px) {
+  .settingText {
+    font-size: 15px !important;
+  }
+    .accountDeleteButton {
+      font-size: 10px !important;
+    }
 }

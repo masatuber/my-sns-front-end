@@ -1,0 +1,9 @@
+.sidebarFriendName {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 414px) {
+  .sidebarFriendName {
+      font-size: 10px !important;
+  }
+}

@@ -91,7 +91,9 @@ export default function Post({ post }) {
               {/* <MoreVert /> */}
               {/* ログインユーザーとpostのユーザーIDが等しい時に削除button表示 */}
               {loginUser._id === post.userid && (
-                <button onClick={handleDelete}>投稿を削除する</button>
+                <button onClick={handleDelete} className="postDeleteButton">
+                  投稿を削除する
+                </button>
               )}
             </div>
           </div>

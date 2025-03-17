@@ -6,9 +6,9 @@
     padding: 20px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 414px) {
     .timelineWrapper {
-        padding: 10px;
+        padding: 2px !important;
     }
 
 }

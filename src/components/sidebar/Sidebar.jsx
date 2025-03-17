@@ -70,7 +70,7 @@ export default function Sidebar() {
             </li>
             <hr className="sidebarHr" />
           </ul>
-          <button onClick={(e) => handleSubmit(e)}>
+          <button onClick={(e) => handleSubmit(e)} className="cashDelete">
             キャッシュを削除して新規登録に戻る
           </button>
           <ul className="sidebarFriendList">
