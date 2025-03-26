@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import "./Login.css";
 import { loginCall } from "../../actionCalls";
 import { AuthContext } from "../../state/AuthContext";
@@ -9,11 +9,15 @@ export default function Login() {
   const passwordRef = useRef();
   //useContextでAuthContextの値を取得 user, isFetching, error,
   const { dispatch } = useContext(AuthContext);
+  //renderのインスタンス停止時は遅延があるので、通信の状態を管理する機能を追加（ログイン処理側）
+  const [loading, setLoading] = useState(false);
+
   //formタグのonSubmitが使える
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log(email.current.value);
     // console.log(password.current.value);
+    setLoading(true);
     await loginCall(
       {
         email: emailRef.current.value,
@@ -21,7 +25,7 @@ export default function Login() {
       },
       dispatch
     );
-  
+    setLoading(false);
   };
   
 
@@ -57,6 +61,7 @@ export default function Login() {
               </span>
               <button className="loginRegisterButton">アカウントを作成</button>
             </form>
+            {loading ? <div>ログイン処理中お待ちください</div> : <div></div>}
           </div>
         </div>
       </div>

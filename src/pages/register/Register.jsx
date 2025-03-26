@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./Register.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
@@ -8,12 +8,14 @@ export default function Register() {
   const email = useRef();
   const password = useRef();
   const passwordConfirmation = useRef();
+  //renderのインスタンス停止時は遅延があるので、通信の状態を管理する機能を追加（新規処理側）
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
     //パスワードと確認用のパスワードが一致しているかチェック
     if (password.current.value !== passwordConfirmation.current.value) {
       passwordConfirmation.current.setCustomValidity(
@@ -21,6 +23,7 @@ export default function Register() {
       );
     } else {
       try {
+        
         const user = {
           username: username.current.value,
           email: email.current.value,
@@ -31,6 +34,7 @@ export default function Register() {
           "https://my-sns-backend.onrender.com/api/auth/register",
           user
         );
+        setLoading(true);
         navigate("/login");
       } catch (err) {
         alert(err);
@@ -38,7 +42,6 @@ export default function Register() {
     }
   };
   //↑までがhandleSubmit関数のスコープ
-
 
   return (
     <>
@@ -97,6 +100,7 @@ export default function Register() {
 
               <button className="loginRegisterButton">ログイン</button>
             </form>
+            {loading ? <div>通信中お待ちください</div> : <div></div>}
           </div>
         </div>
       </div>
