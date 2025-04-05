@@ -100,7 +100,7 @@ export default function Register() {
 
               <button className="loginRegisterButton">ログイン</button>
             </form>
-            {loading ? <div>通信中お待ちください</div> : <div></div>}
+            {loading && <div>通信中お待ちください</div>}
           </div>
         </div>
       </div>

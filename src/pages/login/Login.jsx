@@ -61,7 +61,7 @@ export default function Login() {
               </span>
               <button className="loginRegisterButton">アカウントを作成</button>
             </form>
-            {loading ? <div>ログイン処理中お待ちください</div> : <div></div>}
+            {loading && <div>ログイン処理中お待ちください</div> }
           </div>
         </div>
       </div>
